@@ -1,0 +1,45 @@
+name: pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  # Studio checkout that provides glyphs.js; its own CI drift-guards that file
+  # against the pinned firmware. Bump deliberately, together with any glyph
+  # regeneration, the same way Studio bumps its firmware sync index.
+  STUDIO_REF: e526be2cb9a21b1780a5330da0b7e2573663cc6e
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: website
+      - uses: actions/checkout@v4
+        with:
+          repository: Gangleri42/studio
+          ref: ${{ env.STUDIO_REF }}
+          path: seedhammer-studio
+      - name: checks
+        run: website/tools/check.sh
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: website
+      - id: deployment
+        uses: actions/deploy-pages@v4

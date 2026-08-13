@@ -1,3 +1,2 @@
-og-image.png
-*.pyc
 __pycache__/
+*.pyc
