@@ -18,7 +18,7 @@
 <header class="masthead">
   <div class="masthead-inner">
     <a class="brand" href="#top" aria-label="SeedHammer EDITION, back to top">
-      <svg class="mark" viewBox="0 0 432 432" aria-hidden="true"><rect x="16" y="16" width="400" height="400" rx="88" class="mark-plate"/><g class="mark-hammer" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"><path d="M126 306 246 186"/><path d="M234 120c22-22 58-22 80 0l-6 6c14 14 14 38 0 52l-40 40c-14 14-38 14-52 0l6-6c-22-22-22-58 0-80z" transform="rotate(3 274 160)"/><path d="M292 232l14-14"/></g></svg>
+      <svg class="mark" viewBox="0 0 512 512" aria-hidden="true"><rect x="40" y="40" width="432" height="432" rx="96" class="mark-plate"/><g class="mark-hammer" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="34"><path d="M188 168 L324 304"/><path d="M300 148 a56 56 0 0 1 64 64 l-52 52 -64 -64 z"/><path d="M300 330 L214 416"/></g></svg>
       <span class="wordmark">SEEDHAMMER EDITION</span>
     </a>
     <nav class="nav" aria-label="Sections">
@@ -122,14 +122,13 @@
     <h2 id="seed-h">Your hand draws the seed.</h2>
     <p>The machine does not generate seed phrases. You do, from dice, tiles or coins. What it adds is the one word you cannot draw: the last word carries a checksum, so only 8 of the 2048 words complete a 24-word phrase. Type your 23 drawn words and the machine computes the final one, taking the 3 bits it is free to choose from the RP2350's hardware random number generator.</p>
     <figure class="bits-fig">
-      <svg viewBox="0 0 860 150" role="img" aria-label="Diagram of a 256-bit seed: 253 bits fixed by your drawn words, 3 bits contributed by the machine">
-        <rect class="bits-yours" x="10" y="30" width="800" height="44"/>
-        <rect class="bits-machine" x="810" y="30" width="40" height="44"/>
+      <svg viewBox="0 0 430 96" role="img" aria-label="Diagram of a 256-bit seed: 253 bits fixed by your drawn words, 3 bits contributed by the machine">
+        <rect class="bits-yours" x="5" y="8" width="400" height="27"/>
+        <rect class="bits-machine" x="405" y="8" width="4.7" height="27"/>
+        <text class="bits-label" x="205" y="26" text-anchor="middle">253 bits · drawn by your hand</text>
         <g class="dims">
-          <line x1="10" y1="100" x2="810" y2="100"/><line x1="10" y1="92" x2="10" y2="108"/><line x1="810" y1="92" x2="810" y2="108"/>
-          <line x1="810" y1="126" x2="850" y2="126"/><line x1="810" y1="118" x2="810" y2="134"/><line x1="850" y1="118" x2="850" y2="134"/>
-          <text x="410" y="122" text-anchor="middle">253 bits · fixed by your drawn words</text>
-          <text x="790" y="148" text-anchor="end">3 bits · the machine</text>
+          <line x1="407.4" y1="38" x2="407.4" y2="60"/>
+          <text x="425" y="74" text-anchor="end">3 bits · the machine</text>
         </g>
       </svg>
       <figcaption><b>Fig. 4:</b> the split is the point. Your 23 words fix 253 of 256 bits; the machine supplies 3 and cannot influence the rest. A fully broken generator still leaves an attacker facing 253 bits. A device that generates all 24 words holds the whole wallet inside its RNG instead.</figcaption>
