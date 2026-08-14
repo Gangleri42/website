@@ -55,10 +55,10 @@ def build():
         )
         groups.append(f'<g transform="translate({tx:.0f},{ty}) scale({SCALE})">{uses}</g>')
 
-    return f'''<svg class="plate-svg" viewBox="-2500 -9000 99200 96500" role="img" aria-hidden="true">
+    return f'''<svg class="plate-svg" viewBox="-2500 -9000 99200 96500" aria-hidden="true">
 <rect class="plate-outline" x="0" y="0" width="85000" height="85000" rx="1500"/>
 <rect class="plate-margin" x="3000" y="3000" width="79000" height="79000"/>
-<g class="dims" aria-hidden="true">
+<g class="dims">
 <line x1="0" y1="-4500" x2="85000" y2="-4500"/>
 <line x1="0" y1="-5600" x2="0" y2="-3400"/>
 <line x1="85000" y1="-5600" x2="85000" y2="-3400"/>

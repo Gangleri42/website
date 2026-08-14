@@ -9,6 +9,7 @@ if (boot) {
     frame.title = "SeedHammer Studio, running the machine's firmware as WebAssembly";
     frame.allow = "clipboard-write";
     device.replaceChildren(frame);
+    frame.focus();
     const full = document.createElement("p");
     full.className = "microline";
     full.innerHTML = '<a href="https://gangleri42.github.io/studio/">Open full screen ↗</a>';

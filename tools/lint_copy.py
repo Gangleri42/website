@@ -17,6 +17,9 @@ BANNED = [
     "delve", "crucial", "pivotal", "unlock", "effortless", "empower",
     "elevate", "state-of-the-art", "revolutionary", "game-chang",
     "in today's", "moreover", "furthermore", "ultimately",
+    # the hardware-wallet emulator experiment is local-only; the public site
+    # never names it or its vendor
+    "coldcard", "coinkite",
 ]
 
 

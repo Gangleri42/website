@@ -11,8 +11,7 @@ Not an official SeedHammer project; the machine is built and sold at seedhammer.
 
 The page reports, it doesn't advertise. The fork's best marketing is its bench
 data: circle distortion driven from 2.89% to 0.000%, a 973-character descriptor
-engraved and read back with zero errors, the machine's real firmware (8,101,199
-bytes of WebAssembly) running in the visitor's browser. So the page borrows the
+engraved and read back with zero errors, the machine's real firmware (about 8.7 MB of WebAssembly) running in the visitor's browser. So the page borrows the
 one genre this audience already trusts, the instrument datasheet, produced at
 full agency polish. Every claim carries a number; every number carries a repo path.
 
@@ -21,7 +20,7 @@ Chosen from three independently developed directions scored by three judges
 atelier direction won conversion 9 and its conversion mechanics were grafted on
 (category kicker, CTA microline, proof rail under the hero, Open Studio three
 times). From the dark "sovereign terminal" direction: serpentine draw order with
-its source cite, strokes cooling brass to ink, the Coldcard Mk5 figures.
+its source cite and strokes cooling brass to ink.
 
 ## Signature element
 
@@ -60,10 +59,8 @@ Plate drawn at true firmware geometry: 85 × 85 mm, margin 3 mm, no corner holes
 2. **Proof rail** — five brass numbers: 0.000% distortion · 973 chars, zero
    errors · 95/95 glyphs · ~1,500-char QR capacity · 253 of 256 bits yours.
 3. **Studio showpiece** — "Boot the machine": click-to-load emulator embed
-   (8.1 MB wasm loads on demand behind a poster frame). Demo-wallet copy
-   (press 1 for BACON, 1 then 3 for one wallet from both ends, 8 for the
-   Coldcard memorial). Coldcard Mk5 paragraph: 1,127,017 bytes of actual
-   MicroPython, NFC export straight into the emulator. Second CTA.
+   (the ~8.7 MB wasm loads on demand behind a poster frame). Demo copy:
+   press 1 for BACON, 1 then 3 for one wallet from both ends. Second CTA.
 4. **Engrave anything** — vitrine of four plates (drawing, rich text, seed
    grid, npub) from firmware-rendered images; curves payload, six text sizes,
    small 85 × 55 plate and its printable jaw (3MF + STEP).
@@ -89,8 +86,9 @@ Plate drawn at true firmware geometry: 85 × 85 mm, margin 3 mm, no corner holes
   only as the machine this software runs on. Courtesy note upstream pre-launch.
 - Unsigned firmware said plainly: flashing means fusing your own boot key;
   official firmware stays bootable beside yours.
-- Hotkey 8 taps the Coldcard **memorial seed**; the Coldcard Mk5 emulator is a
-  separate capability. Never claim "press 8 for a Coldcard emulator".
+- The in-browser hardware-wallet emulator experiment is local-only, removed
+  from the public Studio on 2026-07-21. The site never names it or its vendor;
+  the copy linter enforces this.
 - No corner holes on plate drawings; the firmware defines none.
 - No rotting numbers (commit counts). Rev field carries the firmware sync tag.
 - "Does not track its visitors" must be literally true.
