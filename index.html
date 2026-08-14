@@ -104,7 +104,7 @@
   <div class="body">
     <h2 id="engrave-h">Anything you can draw or type.</h2>
     <p>A new NDEF record type, <code>seedhammer.com:curves</code>, carries vector drawings and rich text. The firmware re-fits incoming geometry to its own spline, plans its own timing, and rasterizes a preview on screen. Nothing engraves until you approve that image.</p>
-    <p>Plain text engraves too, typed on the machine's own three-layer keyboard or written from any phone NFC app. The firmware sets it at the largest of six sizes (6.0 down to 3.0 mm) whose grid holds the whole text: up to 1,144 characters on the square plate. The font covers all 95 printable ASCII characters. A Nostr key, <code>npub</code> or <code>nsec</code>, engraves as a NIP-19 key plate; for a secret key the device derives the public key and offers its plate second.</p>
+    <p>Plain text engraves too, typed on the machine's own three-layer keyboard or written from any phone NFC app. The firmware sets it at the largest of six sizes (6.0 down to 3.0 mm) whose grid holds the whole text: up to 1,144 characters on the square plate. That ceiling is bench-verified: a full 44 × 26 grid engraved at 3.0 mm read back by OCR with zero errors. The font covers all 95 printable ASCII characters. A Nostr key, <code>npub</code> or <code>nsec</code>, engraves as a NIP-19 key plate; for a secret key the device derives the public key and offers its plate second.</p>
     <figure class="vitrine-fig">
       <div class="vitrine">
         <figure><img src="assets/img/plate-svg-drawing.png" alt="Steel plate engraved with a vector drawing" loading="lazy" width="728" height="728"><figcaption>SVG drawing</figcaption></figure>
@@ -180,7 +180,7 @@
   <div class="body">
     <h2 id="instrument-h">Built like an instrument.</h2>
     <p>Round glyphs used to engrave egg-shaped: the O planned 2.89% asymmetric. An interpolating spline fitter cut that to 0.22%; rotating each loop's seam to where curvature hides it took bench circles to 0.000%. Constant-velocity cruising holds the needle through arcs: a planned 70 mm circle runs 27.6 s against the hardware's 27.5 s floor.</p>
-    <p>Capacity went the same way. A 973-character 5-of-7 descriptor engraved at 3.0 mm and transcribed back from a photo with zero character errors, and the QR fallback ladder reaches about 1,500 characters in the QR's compact charset where stock firmware fails outright past its one fixed layout.</p>
+    <p>Capacity went the same way. A 973-character 5-of-7 descriptor engraved at 3.0 mm and transcribed back from a photo with zero character errors. The square plate's ceiling holds too: a full 44 × 26 grid, 1,144 characters of the repeating charset, engraved and read back clean by OCR. And the QR fallback ladder reaches about 1,500 characters in the QR's compact charset where stock firmware fails outright past its one fixed layout.</p>
     <div class="tablewrap">
       <table>
         <caption class="visually-hidden">Measured results with sources</caption>
@@ -190,6 +190,7 @@
         <tbody>
         <tr><td>Roundness error, planned toolpath</td><td class="num">2.89% → 0.22% → 0.000%</td><td class="src">bench record, fork-vs-upstream.md §5</td></tr>
         <tr><td>5-of-7 descriptor, engraved and transcribed back</td><td class="num">973 chars, 0 errors</td><td class="src">bench record, fork-vs-upstream.md §1</td></tr>
+        <tr><td>Full-grid text plate at 3.0 mm, OCR readback</td><td class="num">1,144 chars, 0 errors</td><td class="src">bench record, fork-vs-upstream.md §2</td></tr>
         <tr><td>QR-backed descriptor capacity</td><td class="num">~1,500 chars</td><td class="src">README; bench record</td></tr>
         <tr><td>Adversarial NFC parser probes / findings</td><td class="num">~100,000 / 0 panics</td><td class="src">audit record, 2026-08-12</td></tr>
         <tr><td>Firmware-rendered manual screenshots, drift-gated</td><td class="num">41</td><td class="src">cmd/docs, CI</td></tr>
