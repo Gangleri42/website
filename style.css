@@ -46,11 +46,9 @@ img{max-width:100%;height:auto;display:block}
   max-width:1060px;margin:0 auto;padding:16px 24px;
   display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
 }
-.brand{display:flex;align-items:baseline;gap:11px;text-decoration:none}
-.logo{height:20px;width:auto;display:block}
-.logo .mark{fill:var(--brass)}
-.logo .lettering{fill:var(--head)}
-.wordmark{font-family:var(--mono);font-weight:600;font-size:12.5px;letter-spacing:.16em;color:var(--muted)}
+.brand{display:flex;align-items:center;text-decoration:none}
+.logo{height:17px;width:auto;display:block}
+.logo path{fill:var(--brass)}
 .nav{display:flex;gap:22px}
 .nav a{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--ink);text-decoration:none}
 .nav a:hover{color:var(--brass-link);text-decoration:underline;text-underline-offset:4px}
