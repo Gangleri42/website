@@ -101,8 +101,7 @@ Plate drawn at true firmware geometry: 85 × 85 mm, margin 3 mm, no corner holes
   checkout at build time, pinned to the same sync tag Studio uses.
 - Domain: seedhammer.space apex serves the landing; Studio moves to
   studio.seedhammer.space. The NFC bridge allow-list (ORIGINS in the firmware
-  repo's install.sh) needs the new Studio origin. CTAs point at
-  gangleri42.github.io until the subdomain resolves, then switch.
+  repo's install.sh) needs the new Studio origin. CTAs point at studio.seedhammer.space.
 - CI gates: copy linter (banned words, em-dash, claim-needs-number),
   Lighthouse 100s, transfer well under 300 KB before the optional emulator
   boot, both themes + reduced motion screenshot-tested, link check including
