@@ -43,21 +43,24 @@ img{max-width:100%;height:auto;display:block}
 /* ---------- masthead ---------- */
 .masthead{border-bottom:1px solid var(--hair)}
 .masthead-inner{
-  max-width:1060px;margin:0 auto;padding:20px 24px;
-  display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+  max-width:1060px;margin:0 auto;padding:18px 24px;
+  display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;
 }
 /* The marks carry fill="currentColor" in the markup rather than taking a
    fill from here, so they paint from the brand's colour even when this
    stylesheet is the ten-minute-stale copy a browser still holds from the
    previous deploy. A fill that lives only in CSS renders black in that
    window. */
-/* The lockup reads as mark plus wordmark, then the qualifier a step
-   further out, so the gap after the wordmark is the wider one. */
-.brand{display:flex;align-items:center;gap:18px;text-decoration:none;color:var(--brass)}
-.mark{height:21px;width:auto;display:block}
+/* One lockup: the mark anchors it, the wordmark sits at cap height beside
+   it, and EDITION is a quiet label behind a hairline. */
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--brass)}
+.mark{height:20px;width:auto;display:block}
 .logo{height:18px;width:auto;display:block}
-.wordmark{font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:.18em;color:var(--muted);margin-left:10px}
-.nav{display:flex;gap:30px}
+.wordmark{
+  font-family:var(--mono);font-weight:400;font-size:10px;letter-spacing:.18em;color:var(--muted);
+  border-left:1px solid var(--hair);padding-left:11px;margin-left:2px;
+}
+.nav{display:flex;gap:24px}
 .nav a{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--ink);text-decoration:none}
 .nav a:hover{color:var(--brass-link);text-decoration:underline;text-underline-offset:4px}
 .notice{
