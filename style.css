@@ -46,9 +46,15 @@ img{max-width:100%;height:auto;display:block}
   max-width:1060px;margin:0 auto;padding:16px 24px;
   display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
 }
-.brand{display:flex;align-items:center;text-decoration:none}
-.logo{height:17px;width:auto;display:block}
-.logo path{fill:var(--brass)}
+/* The marks carry fill="currentColor" in the markup rather than taking a
+   fill from here, so they paint from the brand's colour even when this
+   stylesheet is the ten-minute-stale copy a browser still holds from the
+   previous deploy. A fill that lives only in CSS renders black in that
+   window. */
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--brass)}
+.mark{height:19px;width:auto;display:block}
+.logo{height:16px;width:auto;display:block}
+.wordmark{font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:.16em;color:var(--muted)}
 .nav{display:flex;gap:22px}
 .nav a{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--ink);text-decoration:none}
 .nav a:hover{color:var(--brass-link);text-decoration:underline;text-underline-offset:4px}
