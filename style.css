@@ -87,7 +87,7 @@ img{max-width:100%;height:auto;display:block}
 .plate-svg .dims text{font-size:2500px}
 .plate-outline{fill:var(--panel2);stroke:var(--hair);stroke-width:220}
 .plate-margin{fill:none;stroke:var(--hair);stroke-width:110;stroke-dasharray:900 700}
-.hero-fig figcaption,figure>figcaption{
+figure>figcaption{
   font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--muted);
   max-width:62ch;margin:10px auto 0;
 }
@@ -167,7 +167,6 @@ figure{margin:22px 0}
   padding:11px 20px;cursor:pointer;
 }
 .boot:hover{filter:brightness(1.07)}
-.device-fig figcaption{margin-top:12px}
 
 .vitrine{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
 .vitrine figure{margin:0;border:1px solid var(--hair);background:var(--panel);display:flex;flex-direction:column}

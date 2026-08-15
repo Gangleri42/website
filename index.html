@@ -59,7 +59,6 @@
 <defs><path id="g46" pathLength="1" d="M2100 5000C2100 5000 2040 5000 2040 5000C2040 5000 2100 5010 2100 5000C2100 4990 2030 4960 2020 4960C2020 4960 2080 5000 2100 5000C2120 5000 2110 4960 2100 4960C2100 4960 2100 5000 2100 5000"/><path id="g65" pathLength="1" d="M500 5000C500 5000 2000 1100 2000 1100C2000 1100 3500 5000 3500 5000M900 4000C900 4000 3100 4000 3100 4000"/><path id="g69" pathLength="1" d="M3300 1100C3300 1100 700 1100 700 1100C700 1100 700 5000 700 5000C700 5000 3300 5000 3300 5000M700 3000C700 3000 2600 3000 2600 3000"/><path id="g71" pathLength="1" d="M3200 1500C3200 1500 3080 1350 2950 1250C2830 1150 2700 1100 2580 1060C2460 1020 2330 1000 2200 1000C2070 1000 1930 1020 1790 1050C1660 1080 1530 1140 1410 1210C1300 1280 1190 1370 1090 1470C1000 1570 920 1680 860 1800C800 1930 750 2060 710 2190C670 2320 640 2450 620 2590C610 2730 600 2860 600 3000C600 3140 610 3280 620 3410C640 3550 670 3680 710 3810C750 3950 800 4080 860 4200C920 4320 1000 4430 1090 4530C1190 4640 1300 4720 1410 4800C1530 4860 1660 4920 1790 4950C1930 4990 2070 5000 2200 5000C2330 5000 2460 4980 2580 4940C2700 4900 2820 4850 2950 4750C3070 4650 3200 4500 3200 4500C3200 4500 3200 3200 3200 3200C3200 3200 2300 3200 2300 3200"/><path id="g72" pathLength="1" d="M700 1100C700 1100 700 5000 700 5000M3300 1100C3300 1100 3300 5000 3300 5000M700 3000C700 3000 3300 3000 3300 3000"/><path id="g73" pathLength="1" d="M2000 1100C2000 1100 2000 5000 2000 5000M1100 1100C1100 1100 2900 1100 2900 1100M1100 5000C1100 5000 2900 5000 2900 5000"/><path id="g78" pathLength="1" d="M700 5000C700 5000 700 1100 700 1100C700 1100 3300 5000 3300 5000C3300 5000 3300 1100 3300 1100"/><path id="g82" pathLength="1" d="M900 3300C900 3300 2000 3300 2000 3300C2000 3300 2200 3280 2360 3240C2520 3200 2640 3140 2740 3050C2840 2970 2930 2860 2990 2740C3050 2630 3090 2500 3100 2370C3120 2230 3110 2100 3080 1970C3050 1840 3000 1710 2930 1600C2860 1490 2760 1400 2650 1320C2540 1240 2420 1180 2260 1150C2100 1110 1900 1100 1900 1100C1900 1100 900 1100 900 1100C900 1100 900 5000 900 5000M2100 3300M3200 5000C3200 5000 2100 3300 2100 3300"/><path id="g84" pathLength="1" d="M700 1100C700 1100 3300 1100 3300 1100M2000 5000C2000 5000 2000 1100 2000 1100"/><path id="g86" pathLength="1" d="M3400 1100C3400 1100 2000 5000 2000 5000C2000 5000 600 1100 600 1100"/><path id="g89" pathLength="1" d="M600 1100C600 1100 2000 3600 2000 3600C2000 3600 2000 5000 2000 5000M2000 3600C2000 3600 3400 1100 3400 1100"/></defs>
 </svg>
 <!-- hero-plate:end -->
-    <figcaption><b>Fig. 1:</b> square plate, 85.00 × 85.00 mm, margin 3.00 mm. Headline set in the machine's own engraving font, drawn in serpentine row order. Source: glyph tables from cmd/textplate; ordering, the serpentine walk in engrave/engrave.go.</figcaption>
   </figure>
   <p class="subhead">SeedHammer EDITION keeps every backup flow the stock machine verifies, then opens it up. Draw it, type it, tap it over NFC. The machine shows the exact strokes it will cut. You approve. Steel keeps the rest.</p>
   <div class="cta-row">
@@ -83,16 +82,15 @@
   <p class="no">§1</p>
   <div class="body">
     <h2 id="studio-h">Try the whole machine before you touch one.</h2>
-    <p>The emulator is the firmware. Studio boots the machine's real GUI, compiled from the firmware repo into 8.7 MB of WebAssembly and painted on the same 480 × 320 screen the device carries. Drag to navigate; the machine is a touch device.</p>
+    <p>The emulator is the firmware: the machine's real GUI, compiled to 8.7 MB of WebAssembly and painted on the same 480 × 320 screen the device carries. Drag to navigate; it is a touch device.</p>
     <figure class="device-fig">
       <div class="device" id="device">
         <img src="assets/img/svg-01-drawing-preview.png" alt="The machine's engrave-preview screen showing a vector drawing planned onto a plate" width="480" height="320">
         <button class="boot" id="boot" type="button">BOOT THE MACHINE</button>
       </div>
-      <figcaption><b>Fig. 2:</b> the engrave-preview screen, rendered by the firmware itself. Booting loads the machine alone, about 8.7 MB of WebAssembly, from studio.seedhammer.space. Until then this page talks to no other host.</figcaption>
     </figure>
-    <p>Demos sit on the number keys. Press 1 for a 24-word BACON seed. Press 3 for a 2-of-3 descriptor those demo seeds cosign; press 1 then 3 to see one wallet from both ends. The seeds are nonsense on purpose. Nobody mistakes BACON, 24 times over, for their own backup.</p>
-    <p>When you want metal, Android Chrome writes the plate over Web NFC, nothing to install. On a desktop, a small local bridge drives an ACS ACR122U reader. Studio installs as an app and, once the firmware has been fetched, works offline.</p>
+    <p>The number keys tap in demo wallets. Press 1 for a 24-word seed, 3 for a 2-of-3 descriptor it cosigns, or 1 then 3 to see one wallet from both ends. The words are nonsense on purpose: nobody mistakes BACON, 24 times over, for their own backup.</p>
+    <p>When you want metal, Android Chrome writes the plate over Web NFC with nothing to install; on a desktop a small local bridge drives an ACS ACR122U reader. Studio installs as an app and works offline once the firmware is fetched.</p>
     <p><a class="cta" href="https://studio.seedhammer.space/">[ OPEN STUDIO ]</a></p>
   </div>
 </section>
@@ -111,9 +109,9 @@
         <figure><img src="assets/img/plate-seed-small-titled.png" alt="Small steel plate engraved with a titled 12-word seed" loading="lazy" width="728" height="488"><figcaption>Seed, small plate 85 × 55</figcaption></figure>
         <figure><img src="assets/img/plate-npub.png" alt="Steel plate engraved with a Nostr public key" loading="lazy" width="728" height="488"><figcaption>Nostr key, NIP-19</figcaption></figure>
       </div>
-      <figcaption><b>Fig. 3:</b> plate layouts rendered by the firmware's own planner, exactly as cut. Source: docs/images in the firmware repo, regenerated by CI on every change.</figcaption>
+      <figcaption><b>Fig. 1:</b> plate layouts rendered by the firmware's own planner, exactly as cut. Source: docs/images in the firmware repo, regenerated by CI on every change.</figcaption>
     </figure>
-    <p>The small 85 × 55 mm plate rides a printable adapter jaw; the model is in the repo as 3MF (ready to slice) and STEP (the CAD solid).</p>
+    <p>The small 85 × 55 mm plate rides a printable adapter jaw. Download the model as <a href="assets/hardware/small-plate-jaw.3mf" download>3MF, ready to slice</a> (125 KB) or <a href="assets/hardware/small-plate-jaw.step" download>STEP, the CAD solid</a> (424 KB).</p>
   </div>
 </section>
 
@@ -133,7 +131,7 @@
           <text x="425" y="74" text-anchor="end">3 bits · the machine</text>
         </g>
       </svg>
-      <figcaption><b>Fig. 4:</b> the split is the point. Your 23 words fix 253 of 256 bits; the machine supplies 3 and cannot influence the rest. A fully broken generator still leaves an attacker facing 253 bits. A device that generates all 24 words holds the whole wallet inside its RNG instead.</figcaption>
+      <figcaption><b>Fig. 2:</b> the split is the point. Your 23 words fix 253 of 256 bits; the machine supplies 3 and cannot influence the rest. A fully broken generator still leaves an attacker facing 253 bits. A device that generates all 24 words holds the whole wallet inside its RNG instead.</figcaption>
     </figure>
     <p>Once the seed plate is cut, the machine derives the wallet descriptor and shows it as a QR to scan into a watch-only wallet. The seed never leaves the machine and never gets typed into a computer.</p>
     <p>A BIP39 passphrase is optional, carried on a plate of its own, and uncapped. Trezor stops at 50 characters. Ledger and Jade stop at 100, BitBox02 at 127, Keystone at 128. BIP39 sets no limit, so this machine sets none either.</p>
@@ -145,13 +143,13 @@
   <p class="no">§4</p>
   <div class="body">
     <h2 id="multisig-h">Multisig, in steel, no computer in the middle.</h2>
-    <p>MULTISIG WALLET in the input menu assembles an M-of-N wallet on the device. Name it, pick the quorum, then add each cosigner: typed words, a seed tapped over NFC, or a bare account key from a cosigner whose seed never touches this machine. The descriptor leaves by camera as an animated code for Sparrow or any UR-capable coordinator, and both ends compare the wallet's first receive address on screen before anything cuts.</p>
+    <p>MULTISIG WALLET in the input menu assembles an M-of-N wallet on the device. Name it, pick the quorum, then add each cosigner: typed words, a seed tapped over NFC, or a bare account key from a cosigner whose seed never touches this machine. The descriptor leaves as an animated QR on the machine's screen, for Sparrow or any UR-capable coordinator to scan, and both ends compare the wallet's first receive address before anything cuts.</p>
     <figure class="duo-fig">
       <div class="duo">
         <img src="assets/img/msw-12-first-address.png" alt="Machine screen showing the wallet's first receive address for cross-checking against the coordinator" loading="lazy" width="480" height="320">
         <img class="plate-img" src="assets/img/plate-share-1of3.png" alt="Cosigner share plate carrying its descriptor fragment as text wrapped around a QR code" loading="lazy" width="728" height="728">
       </div>
-      <figcaption><b>Fig. 5:</b> left, the mandatory first-address cross-check before steel is cut. Right, a cosigner's share plate, plate 1 of 3 from a 2-of-3 split. Both rendered by the firmware.</figcaption>
+      <figcaption><b>Fig. 3:</b> left, the mandatory first-address cross-check before steel is cut. Right, a cosigner's share plate, plate 1 of 3 from a 2-of-3 split. Both rendered by the firmware.</figcaption>
     </figure>
     <p>An existing multisig can be split instead: SPLIT cuts one share plate per cosigner, each fragment wrapped around a QR under a header naming its plate number and cosigner fingerprint. Any signing quorum of plates rebuilds the wallet in Sparrow as one animated code. The partition covers every n-1-of-n and n-of-n quorum plus 2-of-4 and 3-of-5; the rest fall back to full descriptor copies, where any single plate recovers the wallet.</p>
   </div>
@@ -182,23 +180,23 @@
     <p>Capacity went the same way. A 973-character 5-of-7 descriptor engraved at 3.0 mm and transcribed back from a photo with zero character errors. The square plate's ceiling holds too: a full 44 × 26 grid, 1,144 characters of the repeating charset, engraved and read back clean by OCR. And the QR fallback ladder reaches about 1,500 characters in the QR's compact charset where stock firmware fails outright past its one fixed layout.</p>
     <div class="tablewrap">
       <table>
-        <caption class="visually-hidden">Measured results with sources</caption>
+        <caption class="visually-hidden">Measured results</caption>
         <thead>
-        <tr><th scope="col">Measurement</th><th scope="col">Result</th><th scope="col">Source</th></tr>
+        <tr><th scope="col">Measurement</th><th scope="col">Result</th></tr>
         </thead>
         <tbody>
-        <tr><td>Roundness error, planned toolpath</td><td class="num">2.89% → 0.22% → 0.000%</td><td class="src">bench record, fork-vs-upstream.md §5</td></tr>
-        <tr><td>5-of-7 descriptor, engraved and transcribed back</td><td class="num">973 chars, 0 errors</td><td class="src">bench record, fork-vs-upstream.md §1</td></tr>
-        <tr><td>Full-grid text plate at 3.0 mm, OCR readback</td><td class="num">1,144 chars, 0 errors</td><td class="src">bench record, fork-vs-upstream.md §2</td></tr>
-        <tr><td>QR-backed descriptor capacity</td><td class="num">~1,500 chars</td><td class="src">README; bench record</td></tr>
-        <tr><td>Adversarial NFC parser probes / findings</td><td class="num">~100,000 / 0 panics</td><td class="src">audit record, 2026-08-12</td></tr>
-        <tr><td>Firmware-rendered manual screenshots, drift-gated</td><td class="num">41</td><td class="src">cmd/docs, CI</td></tr>
-        <tr><td>Reproducible builds via the nix flake</td><td class="num">bit for bit</td><td class="src">README, Building from source</td></tr>
+        <tr><td>Roundness error, planned toolpath</td><td class="num">2.89% → 0.22% → 0.000%</td></tr>
+        <tr><td>5-of-7 descriptor, engraved and transcribed back</td><td class="num">973 chars, 0 errors</td></tr>
+        <tr><td>Full-grid text plate at 3.0 mm, OCR readback</td><td class="num">1,144 chars, 0 errors</td></tr>
+        <tr><td>QR-backed descriptor capacity</td><td class="num">~1,500 chars</td></tr>
+        <tr><td>Firmware-rendered manual screenshots, drift-gated</td><td class="num">41</td></tr>
+        <tr><td>Reproducible builds via the nix flake</td><td class="num">bit for bit</td></tr>
         </tbody>
       </table>
     </div>
-    <p>The security audit of 2026-08-12 read every NFC-reachable parser end to end: about 100,000 adversarial probe iterations, zero panics, zero out-of-bounds reads. Seed, codex32 and nsec plates engrave in constant time and source order, closing a stroke-order side channel; a fuzz corpus pins the invariant. The preview you approve rasterizes from the same planning walk that drives the needle.</p>
-    <p class="fineprint">The hero above regenerates from the machine's glyph tables on every deploy. Every other number names its bench record.</p>
+    <p>Two model audits have gone through this fork, Claude Fable 5 first and then Kimi K3 over the same ground. Neither turned up a substantial security defect. Fable implemented on what the two of them concluded, and tests hold the hardening in place.</p>
+    <p>The random number generator went on the bench as well, sampled overnight and measured against a statistical battery. It contributes 3 bits of a 256-bit seed, 7 of a 128-bit one, and only when you ask it to.</p>
+    <p><b>Of course: don't trust, verify.</b> Always recover a backup from the steel yourself before you rely on it.</p>
   </div>
 </section>
 
@@ -233,7 +231,7 @@
       <a href="https://seedhammer.com" rel="external">seedhammer.com</a>
       <a href="https://github.com/Gangleri42/seedhammer">firmware repo</a>
       <a href="https://github.com/Gangleri42/studio">studio repo</a>
-      <a href="https://github.com/Gangleri42/seedhammer/releases/tag/edge">edge prerelease</a>
+      <a href="https://github.com/Gangleri42/seedhammer/releases/latest">latest release</a>
     </nav>
     <p class="fineprint">Not an official SeedHammer project. Fork of <a href="https://github.com/seedhammer/seedhammer">seedhammer/seedhammer</a>, with respect. Made for people who keep keys on steel.</p>
     <p class="fineprint">This page does not track its visitors. No framework, no tracker, no invoice. Text and code of this site: public domain.</p>

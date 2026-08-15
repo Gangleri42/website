@@ -26,9 +26,12 @@ python3 - <<'EOF'
 import sys
 from pathlib import Path
 budget = 300_000
+# assets/hardware holds CAD files served only on a download click, so they
+# are not part of what a visitor fetches to read the page.
 total = sum(p.stat().st_size for p in
             [Path("index.html"), Path("style.css"), Path("main.js"),
-             *Path("assets").rglob("*") ] if p.is_file())
+             *Path("assets").rglob("*")]
+            if p.is_file() and "hardware" not in p.parts)
 print(f"page weight {total:,} B of {budget:,} B budget")
 if total > budget:
     sys.exit("over budget")
