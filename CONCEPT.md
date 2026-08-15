@@ -1,4 +1,4 @@
-# seedhammer.studio · Landing page concept
+# seedhammer.space · Landing page concept
 
 Doc SHS-CONCEPT-01 · Rev 1 · 2026-08-13 · Direction: **TRIPLE ZERO**
 Rendered version: https://claude.ai/code/artifact/2d02ac3a-6b6b-45d4-a0dd-12c7e3f7e700 (includes the live hero mock)
@@ -99,10 +99,10 @@ Plate drawn at true firmware geometry: 85 × 85 mm, margin 3 mm, no corner holes
   vanilla JS (click-to-boot embed, scroll reveals). No framework. Fonts
   self-hosted woff2. Glyph SVG and screenshots generated from the firmware
   checkout at build time, pinned to the same sync tag Studio uses.
-- Domain: apex serves the landing. Studio should follow onto the domain
-  (/studio/ or app.); the NFC bridge allow-list and firmware install.sh both
-  name the GitHub Pages origin today and need the new origin added. Until
-  then, CTAs point at gangleri42.github.io/studio/.
+- Domain: seedhammer.space apex serves the landing; Studio moves to
+  studio.seedhammer.space. The NFC bridge allow-list (ORIGINS in the firmware
+  repo's install.sh) needs the new Studio origin. CTAs point at
+  gangleri42.github.io until the subdomain resolves, then switch.
 - CI gates: copy linter (banned words, em-dash, claim-needs-number),
   Lighthouse 100s, transfer well under 300 KB before the optional emulator
   boot, both themes + reduced motion screenshot-tested, link check including
@@ -113,5 +113,5 @@ Plate drawn at true firmware geometry: 85 × 85 mm, margin 3 mm, no corner holes
 1. Approve or adjust this direction.
 2. Build pass 1: design system, hero with the real glyph pipeline, sections 0-2.
 3. Build pass 2: Studio showpiece with click-to-boot embed, remaining sections.
-4. CI + deploy to seedhammer.studio.
+4. CI + deploy to seedhammer.space.
 5. Decide Studio's move under the domain; courtesy note to upstream.

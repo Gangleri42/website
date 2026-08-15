@@ -1,4 +1,4 @@
-# seedhammer.studio
+# seedhammer.space
 
 Landing page for SeedHammer EDITION (Gangleri42/seedhammer) and SeedHammer
 Studio (Gangleri42/studio). Static: one HTML file, one stylesheet, one small
